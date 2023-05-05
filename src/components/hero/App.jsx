@@ -1,7 +1,10 @@
-import Mail  from "./Mail";
+import { useState } from "react";
 
+import Mail from "./Mail";
+import Modal from "./modal";
 
 const App = () => {
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <div className="mx-auto container ">
       <div className="main header">
@@ -34,6 +37,8 @@ const App = () => {
       </div>
       {/* Join waitlist form */}
       <Mail />
+      {/* <Modal /> */}
+      {modalOpen ? <Modal setModalOpen={() => setModalOpen(false)} /> : null}
     </div>
   );
 };
