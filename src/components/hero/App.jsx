@@ -1,4 +1,4 @@
-import Mail  from "./mail";
+import Mail  from "./Mail";
 
 
 const App = () => {
