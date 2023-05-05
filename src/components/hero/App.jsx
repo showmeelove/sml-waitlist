@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-import Mail from "./Mail";
+import Mail from "./mail";
 import Modal from "./modal";
 
 const App = () => {
   const [modalOpen, setModalOpen] = useState(false);
   return (
-    <div className="mx-auto container ">
+    <div className="first-letter:mx-auto container ">
       <div className="main header">
         <h1 className="text-[22px] mt-[35px] leading-[25.78px] md:text-[36px] md:leading-[42.19px] md:mt-[62px] text-[#EEEEEE] lowercase font-bold text-center font-Eina01Bold">
           ShowMeeLove.
