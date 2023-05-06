@@ -2,6 +2,7 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    
     extend: {
       screens: {
         sm: "576px",
@@ -20,6 +21,10 @@ export default {
         lightblue: "rgba(24, 100, 255, 0.2)",
         buttonBg: "linear-gradient(106.44deg, #1864FF 17.79%, #42AAFF 85.51%)",
       },
+      backgroundImage:{
+        "herobg": "url(./src/assets/images/herobg-min.png)",
+
+      }
     },
   },
   plugins: [],
