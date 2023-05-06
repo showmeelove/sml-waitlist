@@ -2,26 +2,27 @@ import { useState } from "react";
 
 import Mail from "./mail";
 import Modal from "./modal";
+import Memoji from "./memoji";
 
 const App = () => {
   const [modalOpen, setModalOpen] = useState(false);
   return (
-    <div className="first-letter:mx-auto container ">
-      <div className="main header">
-        <h1 className="text-[22px] mt-[35px] leading-[25.78px] md:text-[36px] md:leading-[42.19px] md:mt-[62px] text-[#EEEEEE] lowercase font-bold text-center font-Eina01Bold">
+    <div className="mx-auto container">
+      <div>
+        <h1 className="text-[22px] mt-[35px] leading-[25.78px] md:text-[32px] md:leading-[42.19px] md:mt-[10px] text-[#EEEEEE] lowercase font-bold text-center font-Eina01Bold">
           ShowMeeLove.
         </h1>
-        <div className="mt-[54px] md:mt-[91px] rounded-[50px] max-w-[258px] mx-auto bg-lightblue">
-          <p className="text-showblue font-figtree py-[13px] pr-[10px] text-[12px] leading-[14px] md:text-[14px] font-medium md:leading-[17px] md:pl-[25px] md:pr-[20px] md:py-[11.5px] lowercase md:font-normal text-center">
+        <div className="mt-[54px] md:mt-[60px] rounded-[50px] max-w-[258px] mx-auto bg-lightblue">
+          <p className="text-showblue font-figtree py-[13px] pr-[10px] text-[12px] leading-[14px] md:text-[14px] font-medium md:leading-[16.8pxpx] md:pl-[25px] md:pr-[20px] md:py-[11.5px] lowercase md:font-normal text-center">
             empowering african creators 🚀
           </p>
         </div>
-        <div className="mx-auto max-w-[356px] mt-[40px]  md:mt-[19px] md:max-w-[1027px] ">
-          <h1 className="text-white text-[43px] leading-[49px]  md:text-[74px] md:leading-[85px] font-Eina01Bold lowercase text-center">
+        <div className="mx-auto max-w-[356px] mt-[40px]  md:mt-[35px] md:max-w-[901px] ">
+          <h1 className="text-white text-[43px] leading-[49px]  md:text-[64px] md:leading-[70px] font-Eina01Bold lowercase text-center">
             Let your fans <span className="text-showblue">Show you love</span>{" "}
             for your contents
           </h1>
-          <p className="mx-auto md:block hidden mt-[44px] text-center lowercase font-medium font-figtree text-[22px] leading-[33px] text-showgray max-w-[891px] ">
+          <p className="mx-auto md:block hidden mt-[36px] text-center lowercase font-medium font-figtree text-[20px] leading-[33px] text-showgray max-w-[792px] ">
             Got a devoted fanbase? join our waitlist to get early acess tools
             that will help you Unlock the power of direct support from your fans
             and deepen your connection with your audience by letting them tip
@@ -39,6 +40,7 @@ const App = () => {
       <Mail />
       {/* <Modal /> */}
       {modalOpen ? <Modal setModalOpen={() => setModalOpen(false)} /> : null}
+      <Memoji />
     </div>
   );
 };

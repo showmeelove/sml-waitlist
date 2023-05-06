@@ -1,6 +1,6 @@
 const mail = () => {
   return (
-    <div className="mt-[50px] md:mt-[106px]">
+    <div className="mt-[50px] md:mt-[4  0px]">
       <form
         // onSubmit={handleSubmit}
         className="md:max-w-[610px] mx-auto md:relative "
@@ -8,7 +8,7 @@ const mail = () => {
         <input
           type="email"
           name="Join waitlist "
-          className={`font-figtree w-[390px] p-6 md:py-[33px] md:pl-[40px] md:w-[610px] text-[#A3A3A3] bg-transparent border-[1.5px] outline-none rounded-[60px]`}
+          className={`font-figtree w-[390px] p-6 md:py-[33px] md:pl-[40px] md:w-full text-[#A3A3A3] bg-transparent border-[1.5px] outline-none rounded-[60px]`}
           placeholder="enter your email address"
           // value={}
           // onChange={(e) => setEmail(e.target.value)}
