@@ -21,8 +21,8 @@ const memoji = () => {
   };
 
   return (
-    <marquee behavior="alternate" direction="left">
-      <div className="mt-[30px] mb-[30px] flex gap-x-[2rem] z-40 sm:mt-[3rem] hero-animation">
+    <marquee  direction="left">
+      <div className="mt-[50px] mb-[50px] flex gap-x-[2rem] z-40 md:mt-[60px] hero-animation">
         <ButtonWithImg text={"developers"}>
           <div className="w-[50px]">
             <img src={icon1} alt="/" className="w-[100%]" />
