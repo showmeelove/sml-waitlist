@@ -1,4 +1,4 @@
-const mail = () => {
+const Mail = () => {
   return (
     <div className="mx-auto container px-6 mt-[50px] md:mt-[40px]">
       <form
@@ -29,4 +29,4 @@ const mail = () => {
   );
 };
 
-export default mail;
+export default Mail;
