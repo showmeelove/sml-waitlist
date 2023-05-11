@@ -44,6 +44,7 @@ const App = () => {
       {/* <Modal /> */}
       {modalOpen ? <Modal setModalOpen={() => setModalOpen(false)} /> : null}
       <Memoji />
+      <div className="hero-overlay"></div>
     </div>
   );
 };
