@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Mail from "./mail";
+import Mail from "./Mail";
 import Modal from "./modal";
 import Memoji from "./memoji";
 

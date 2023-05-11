@@ -8,7 +8,7 @@ const mail = () => {
         <input
           type="email"
           name="Join waitlist "
-          className={`font-figtree w-[390px] h-[62px] md:h-[78px] pl-[40px] py-[25px] md:py-[33px] md:pl-[40px] md:w-full text-[#A3A3A3] bg-transparent border-[1.5px] outline-none rounded-[60px]`}
+          className={`font-figtree w-[340px] h-[62px] md:h-[78px] pl-[40px] py-[25px] md:py-[33px] md:pl-[40px] md:w-full text-[#A3A3A3] bg-transparent border-[1.5px] outline-none rounded-[60px]`}
           placeholder="enter your email address"
           // value={}
           // onChange={(e) => setEmail(e.target.value)}
@@ -17,7 +17,7 @@ const mail = () => {
           <button
             type="submit"
             // onClick={(e) => handleSubmit(e)}
-            className={`py-[2px] w-[389px] h-[62px] md:h-[62px] mt-[15px] md:w-[200px] md:py-[7px] text-white bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[40px]`}
+            className={`py-[2px] w-[339px] h-[62px] md:h-[62px] mt-[15px] md:w-[200px] md:py-[7px] text-white bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[40px]`}
             // disabled={error.email}
           >
             {/* {isLoading ? "submit..." : "get early access"} */}
