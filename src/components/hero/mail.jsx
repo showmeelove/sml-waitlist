@@ -59,7 +59,7 @@ const Mail = ({ setModalOpen }) => {
 					value={email}
 					onChange={(e) => setEmail(e.target.value)}
 				/>
-				<div className='md:absolute relative md:top-[-24%] md:right-[2%]'>
+				<div className='md:absolute relative md:top-[-12%] md:right-[2%]'>
 					<button
 						type='submit'
 						// onClick={(e) => handleSubmit(e)}
