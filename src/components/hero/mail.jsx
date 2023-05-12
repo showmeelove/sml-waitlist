@@ -60,7 +60,7 @@ const Mail = ({ setModalOpen }) => {
         <input
           type="email"
           name="Join waitlist "
-          className={`font-figtree w-[350px] h-62px py-[25px] pl-[40px] mx-[19px] md:w-[600px] md:h-[78px] md:pl-[44px] md:py-[32px] border-[#464646] border-solid border-[1.5px] rounded-[60px] outline-none bg-transparent`}
+          className={`font-figtree w-[350px] text-[17px] md:text-[18px] text-showgray font-medium leading-[33psx] h-62px py-[25px] pl-[40px] mx-[19px] md:w-[600px] md:h-[78px] md:pl-[44px] md:py-[32px] border-[#464646] border-solid border-[1.5px] rounded-[60px] outline-none bg-transparent`}
           placeholder="enter your email address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -69,9 +69,9 @@ const Mail = ({ setModalOpen }) => {
           <button
             type="submit"
             // onClick={(e) => handleSubmit(e)}
-            className={`w-[350px] h-[62px] mt-[20px] md:w-[200px] md:h-[62px] text-white text-center bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[40px]`}
+            className={`w-[350px] h-[62px] mt-[20px] md:w-[200px] md:h-[62px] text-[17px] md:text-[18px] font-medium leading-[33px] text-white text-center bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[40px]`}
           >
-            {isLoading ? "..." : "get early access"}
+            {isLoading ? "hold on cheif..!" : "get early access"}
             {/* get early access */}
           </button>
         </div>
