@@ -47,32 +47,35 @@ const Mail = ({ setModalOpen }) => {
 	};
 
 	return (
-		<div className='mt-[30px] mb-[10px] md:mt-[40px]'>
-			<form
-				onSubmit={handleSubmit}
-				className='md:max-w-[610px] flex flex-col justify-between items-center mx-auto md:relative '>
-				<input
-					type='email'
-					name='Join waitlist '
-					className={`font-figtree w-[350px] p-6 md:py-[33px] md:pl-[40px] md:w-full text-[#A3A3A3] bg-transparent border-[1.5px] outline-none rounded-[60px]`}
-					placeholder='enter your email address'
-					value={email}
-					onChange={(e) => setEmail(e.target.value)}
-				/>
-				<div className='md:absolute relative md:top-[-12%] md:right-[2%]'>
-					<button
-						type='submit'
-						// onClick={(e) => handleSubmit(e)}
-						className={`px-[24px] w-[350px] mt-[20px] md:w-[197px] py-[25px] text-white text-center bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[40px]`}
-						// disabled={error.email}
-					>
-						{/* {isLoading ? "submit..." : "get early access"} */}
-						get early access
-					</button>
-				</div>
-			</form>
-		</div>
-	);
+    <div className="mt-[30px] mb-[10px] md:mt-[40px]">
+      <form
+        onSubmit={handleSubmit}
+        className="md:max-w-[610px] flex flex-col justify-between items-center mx-auto md:relative "
+      >
+        <input
+          type="email"
+          name="Join waitlist "
+          className={`font-figtree w-[340px] h-[62px] md:h-[78px] pl-[40px] py-[25px] md:py-[33px] md:pl-[40px] md:w-full text-[#A3A3A3] bg-transparent border-[1.5px] outline-none rounded-[60px]`}
+          // className={`font-figtree w-[350px] p-6 md:py-[33px] md:pl-[40px] md:w-full text-[#A3A3A3] bg-transparent border-[1.5px] outline-none rounded-[60px]`}
+          placeholder="enter your email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <div className="md:absolute relative md:top-[-10%] md:right-[2%]">
+          <button
+            type="submit"
+            // onClick={(e) => handleSubmit(e)}
+            // className={`px-[24px] w-[350px] mt-[20px] md:w-[197px] py-[25px] text-white text-center bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[40px]`}
+            className={`py-[2px] w-[339px] h-[62px] mt-[15px] md:w-[200px] md:py-[7px] text-white bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[40px]`}
+            // disabled={error.email}
+          >
+            {/* {isLoading ? "submit..." : "get early access/"} */}
+            get early access
+          </button>
+        </div>
+      </form>
+    </div>
+  );
 };
 
 export default Mail;
