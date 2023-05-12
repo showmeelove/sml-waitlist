@@ -3,10 +3,13 @@ import { useState } from "react";
 // eslint-disable-next-line react/prop-types
 const Mail = ({ setModalOpen }) => {
 	const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
 	// const [error, setError] = useState("");
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+    setIsLoading(true);
 		fetch("https://showmeelove-api.vercel.app/v1/waitlist", {
 			method: "POST",
 			headers: {
@@ -19,6 +22,7 @@ const Mail = ({ setModalOpen }) => {
 			.then((response) => {
 				if (response.ok) {
 					setModalOpen(true);
+           setIsLoading(false);
 					console.log("Request sent successfully!");
 				} else {
 					if (response.status === 400) {
@@ -41,6 +45,7 @@ const Mail = ({ setModalOpen }) => {
 			})
 			.catch((error) => {
 				console.error("Error:", error);
+        setIsLoading(false);
 
 				alert(error);
 			});
@@ -69,8 +74,8 @@ const Mail = ({ setModalOpen }) => {
             className={`py-[2px] w-[339px] h-[62px] mt-[15px] md:w-[200px] md:py-[7px] text-white bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[40px]`}
             // disabled={error.email}
           >
-            {/* {isLoading ? "submit..." : "get early access/"} */}
-            get early access
+            {isLoading ? "" : "get early access"}
+            {/* get early access */}
           </button>
         </div>
       </form>
