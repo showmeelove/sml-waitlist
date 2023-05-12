@@ -1,4 +1,4 @@
-const Mail = () => {
+export const Mail = () => {
   return (
     <div className="mx-auto container px-6 mt-[50px] md:mt-[40px]">
       <form
@@ -21,12 +21,12 @@ const Mail = () => {
             // disabled={error.email}
           >
             {/* {isLoading ? "submit..." : "get early access"} */}
-            <span className="text-center text-[17px] md:text-[18px] leading-[33px] font-medium">get early access</span>
+            <span className="text-center text-[17px] md:text-[18px] leading-[33px] font-medium">
+              get early access
+            </span>
           </button>
         </div>
       </form>
     </div>
   );
-};
-
-export default Mail;
+}
