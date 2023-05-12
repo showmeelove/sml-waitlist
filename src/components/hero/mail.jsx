@@ -71,7 +71,7 @@ const Mail = ({ setModalOpen }) => {
             // onClick={(e) => handleSubmit(e)}
             className={`w-[350px] h-[62px] mt-[20px] md:w-[200px] md:h-[62px] text-white text-center bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[40px]`}
           >
-            {isLoading ? "joining..." : "get early access"}
+            {isLoading ? "..." : "get early access"}
             {/* get early access */}
           </button>
         </div>
