@@ -74,7 +74,7 @@ const Mail = ({ setModalOpen }) => {
             className={`py-[2px] w-[339px] h-[62px] mt-[15px] md:w-[200px] md:py-[7px] text-white bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[40px]`}
             // disabled={error.email}
           >
-            {isLoading ? "" : "get early access"}
+            {isLoading ? "joining..." : "get early access"}
             {/* get early access */}
           </button>
         </div>
