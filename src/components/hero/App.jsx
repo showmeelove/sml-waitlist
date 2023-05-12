@@ -17,8 +17,8 @@ const App = () => {
             empowering african creators 🚀
           </p>
         </div>
-        <div className="mx-auto max-w-[356px] mt-[40px]  md:mt-[30px] md:max-w-[901px] ">
-          <h1 className="text-white text-[43px] leading-[49px]  md:text-[64px] md:leading-[70px] font-Eina01Bold lowercase text-center">
+        <div className="mx-auto max-w-[356px] mt-[40px] md:mt-[30px] md:max-w-[901px] ">
+          <h1 className="text-white text-[43px] leading-[49px] md:text-[64px] md:leading-[70px] font-Eina01Bold lowercase text-center">
             Let your fans{" "}
             <span className="bg-clip-text text-transparent text-[43px] leading-[49px] md:text-[64px] md:leading-[70px] font-Eina01Bold lowercase bg-gradient-to-r from-[#1864FF] to-[#42AAFF]">
               Show you love
@@ -32,7 +32,7 @@ const App = () => {
             you for your contents.
           </p>
           {/* small screen here texts */}
-          <p className="md:hidden font-figtree mt-[27px] text-[16px] leading-[28px] font-medium text-showgray max-w-[364px] text-center ">
+          <p className="md:hidden font-figtree mx-[10px] mt-[27px] text-[16px] leading-[28px] font-medium text-showgray max-w-[364px] text-center ">
             Got a devoted fanbase? join our waitlist to get early access to
             tools that will Unlock the power of direct support from your fans
             and deepen your connection with your audience.
