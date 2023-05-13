@@ -16,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  object-fit: cover;
   height:100vh;
   top: 0;
   right: 0;
