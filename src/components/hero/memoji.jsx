@@ -25,7 +25,7 @@ const memoji = () => {
       <div className="mt-[30px] flex gap-x-[2rem] z-40 md:mt-[37px] hero-animation">
         <ButtonWithImg text={"developers"}>
           <div className="w-[50px]">
-            <img src={icon1} alt="/" className="w-[100%]" />
+            <img src={icon1} alt="creators" className="w-[100%]" />
           </div>
         </ButtonWithImg>
         <ButtonWithImg text={"writers"}>
@@ -35,22 +35,22 @@ const memoji = () => {
         </ButtonWithImg>
         <ButtonWithImg text={"podcasters"}>
           <div className="w-[50px]">
-            <img src={icon3} alt="/" className="w-[100%]" />
+            <img src={icon3} alt="creators" className="w-[100%]" />
           </div>
         </ButtonWithImg>
         <ButtonWithImg text={"comedians"}>
           <div className="w-[50px]">
-            <img src={icon4} alt="/" className="w-[100%]" />
+            <img src={icon4} alt="creators" className="w-[100%]" />
           </div>
         </ButtonWithImg>
         <ButtonWithImg text={"community"}>
           <div className="w-[50px]">
-            <img src={icon5} alt="/" className="w-[100%]" />
+            <img src={icon5} alt="creators" className="w-[100%]" />
           </div>
         </ButtonWithImg>
         <ButtonWithImg text={"musicians"}>
           <div className="w-[50px]">
-            <img src={icon6} alt="/" className="w-[100%]" />
+            <img src={icon6} alt="creators" className="w-[100%]" />
           </div>
         </ButtonWithImg>
       </div>
