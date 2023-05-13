@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="mx-auto container">
       <div>
-        <h1 className="text-[22px] mt-[70px] leading-[25.78px] md:text-[32px] md:leading-[42.19px] md:mt-[30px] text-[#EEEEEE] lowercase font-medium text-center font-Eina01Bold">
+        <h1 className="text-[22px] pt-[20px] leading-[25.78px] md:text-[32px] md:leading-[42.19px] md:mt-[0px] md:pt-[20px] text-[#EEEEEE] lowercase font-medium text-center font-Eina01Bold">
           ShowMeeLove.
         </h1>
         <div className="mt-[64px] md:mt-[60px] rounded-[50px] max-w-[258px] mx-auto bg-lightblue">
