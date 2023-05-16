@@ -2,7 +2,8 @@ import { useState } from "react";
 
 import Mail from "./mail";
 import Modal from "./modal";
-import Memoji from "./memoji";
+// import Memoji from "./memoji";
+import Memojis from "./memojis";
 
 const App = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -13,6 +14,7 @@ const App = () => {
           ShowMeeLove.
         </h1>
         {/* <Memoji /> */}
+        <Memojis />
         <div className="mx-auto max-w-[326px] mt-[40px] md:mt-[30px] md:max-w-[901px] ">
           <h1 className="text-white text-[38px] leading-[43px] md:text-[64px] md:leading-[70px] md:w-full font-Eina01Bold lowercase text-center">
             Let your fans{" "}

@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   /* overflow: hidden; */
 }
 
@@ -51,35 +51,3 @@ body {
   background-color: linear-gradient(106.44deg, #1864ff 17.79%, #42aaff 85.51%);
 }
 
-.marquee {
-  height: 25px;
-  width: 420px;
-
-  overflow: hidden;
-  position: relative;
-}
-
-.marquee div {
-  display: block;
-  width: 200%;
-  height: 30px;
-
-  position: absolute;
-  overflow: hidden;
-
-  animation: marquee 5s linear infinite;
-}
-
-.marquee span {
-  float: left;
-  width: 50%;
-}
-
-@keyframes marquee {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -100%;
-  }
-}

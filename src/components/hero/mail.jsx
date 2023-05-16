@@ -55,7 +55,7 @@ const Mail = ({ setModalOpen }) => {
     <div className="mt-[50px] mb-[0px] md:mt-[50px]">
       <form
         onSubmit={handleSubmit}
-        className="md:max-w-[610px] space-y-10 flex flex-col justify-between items-center mx-auto md:relative "
+        className="md:max-w-[610px]  flex flex-col space-y-10 justify-between items-center mx-auto md:relative "
       >
         <div className="mx-[30px]">
           <input
@@ -67,11 +67,11 @@ const Mail = ({ setModalOpen }) => {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <div className="md:absolute relative md:top-2 md:bottom-2 md:right-2">
+        <div className="md:absolute relative md:top-[-12] md:bottom-2 md:right-2">
           <button
             type="submit"
             // onClick={(e) => handleSubmit(e)}
-            className={mailClass()}
+            className={`w-[357px] h-[58px]  md:h-[62px] md:w-[193.48px] md:text-[16.17px] md:leading-[29.65px] font-medium  text-white text-center bg-[#001534] md:hover:bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[35.942px]`}
           >
             {isLoading ? "hold on cheif..!" : "get early access"}
             {/* get early access */}
@@ -80,10 +80,6 @@ const Mail = ({ setModalOpen }) => {
       </form>
     </div>
   );
-
-  function mailClass() {
-    return `w-[357px] h-[58px]  md:h-[62px] md:w-[193.48px] md:text-[16.17px] md:leading-[29.65px] font-medium  text-white text-center bg-gradient-to-r from-[#1864FF] to-[#42AAFF] md:bg-[#001534] md:hover:bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[35.942px]`;
-  }
 };
 
 export default Mail;
