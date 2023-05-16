@@ -52,24 +52,26 @@ const Mail = ({ setModalOpen }) => {
   };
 
   return (
-    <div className="mt-[30px] mb-[10px] md:mt-[40px]">
+    <div className="mt-[50px] mb-[0px] md:mt-[50px]">
       <form
         onSubmit={handleSubmit}
-        className="md:max-w-[610px] flex flex-col justify-between items-center mx-auto md:relative "
+        className="md:max-w-[610px] space-y-10 flex flex-col justify-between items-center mx-auto md:relative "
       >
-        <input
-          type="email"
-          name="Join waitlist "
-          className={`font-figtree w-[350px] text-[17px] md:text-[18px] text-showgray font-medium leading-[33psx] h-62px py-[25px] pl-[40px] mx-[19px] md:w-[600px] md:h-[78px] md:pl-[44px] md:py-[32px] border-[#464646] border-solid border-[1.5px] rounded-[60px] outline-none bg-transparent`}
-          placeholder="enter your email address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <div className="md:absolute relative md:top-[-12px] md:right-3">
+        <div className="mx-[30px]">
+          <input
+            type="email"
+            name="join waitlist"
+            className={`h-[58px] w-[360px] py-[23px] pl-[38px] md:h-[78px] md:w-[610px] md:py-[33px] md:pl-[44px] text-[#61646B] font-medium md:text-[18px] md:leading[33px] font-figtree border-[#464646] border-solid border-[1.5px] rounded-[60px] outline-none bg-transparent`}
+            placeholder="enter your email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="md:absolute relative md:top-2 md:bottom-2 md:right-2">
           <button
             type="submit"
             // onClick={(e) => handleSubmit(e)}
-            className={`w-[350px] h-[62px] mt-[20px] md:w-[200px] md:h-[62px] text-[17px] md:text-[18px] font-medium leading-[33px] text-white text-center bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[40px]`}
+            className={mailClass()}
           >
             {isLoading ? "hold on cheif..!" : "get early access"}
             {/* get early access */}
@@ -78,6 +80,10 @@ const Mail = ({ setModalOpen }) => {
       </form>
     </div>
   );
+
+  function mailClass() {
+    return `w-[357px] h-[58px]  md:h-[62px] md:w-[193.48px] md:text-[16.17px] md:leading-[29.65px] font-medium  text-white text-center bg-gradient-to-r from-[#1864FF] to-[#42AAFF] md:bg-[#001534] md:hover:bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[35.942px]`;
+  }
 };
 
 export default Mail;

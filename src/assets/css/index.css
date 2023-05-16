@@ -6,33 +6,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
   /* overflow: hidden; */
 }
 
 body {
-  background-image: url(../images/herobg-min.png);
-  background-position:center;
-  background-repeat: no-repeat;
+  /* background-image: url(../images/herobg-min.png); */
+  background: linear-gradient(0deg, #010e21, #010e21),
+    linear-gradient(0deg, #61646b, #61646b);
+  background-position: center;
+  background-repeat: repeat;
   background-size: cover;
   position: relative;
   object-fit: cover;
-  height:100vh;
+  height: 100vh;
   top: 0;
   right: 0;
   left: 0;
 }
 
 .hero-overlay {
-	background-color: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top:0;
-	right: 0;
-	left: 0;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   bottom: 0;
-	z-index:-1;
+  z-index: -1;
 }
 
 @font-face {
