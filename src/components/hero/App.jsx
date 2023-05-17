@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="mx-auto container">
       <div className="mx-auto">
-        <h1 className="text-white pt-[50px] text-[22px] leading-[25.78px] md:pt-[33px] md:text-[32px] md:leading-[37.5px] lowercase font-medium text-center font-Eina01Bold">
+        <h1 className="text-white pt-[30px] text-[22px] leading-[25.78px] md:pt-[33px] md:text-[32px] md:leading-[37.5px] lowercase font-medium text-center font-Eina01Bold">
           ShowMeeLove.
         </h1>
         {/* <Memoji /> */}
@@ -46,7 +46,7 @@ const App = () => {
       <Mail setModalOpen={setModalOpen} />
       {/* <Modal /> */}
       {modalOpen ? <Modal setModalOpen={() => setModalOpen(false)} /> : null}
-      <div className="hero-overlay"></div>
+      <div className="hero-pattern"></div>
     </div>
   );
 };
