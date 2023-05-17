@@ -52,16 +52,16 @@ const Mail = ({ setModalOpen }) => {
   };
 
   return (
-    <div className="mt-[50px] mb-[0px] md:mt-[50px]">
+    <div className="mt-[50px] mb-[0px] md:mt-[70px]">
       <form
         onSubmit={handleSubmit}
-        className="md:max-w-[610px]  flex flex-col space-y-10 justify-between items-center mx-auto md:relative "
+        className="md:max-w-[610px]  flex flex-col space-y-6 justify-between items-center mx-auto md:relative "
       >
         <div className="mx-[30px]">
           <input
             type="email"
             name="join waitlist"
-            className={`h-[58px] w-[360px] py-[23px] pl-[38px] md:h-[78px] md:w-[610px] md:py-[33px] md:pl-[44px] text-[#61646B] font-medium md:text-[18px] md:leading[33px] font-figtree border-[#464646] border-solid border-[1.5px] rounded-[60px] outline-none bg-transparent`}
+            className={`h-[58px] w-[360px] py-[23px] pl-[38px] md:h-[78px] md:w-[610px] md:py-[33px] md:pl-[44px] text-[#dedede] font-medium md:text-[18px] md:leading[33px] font-figtree border-[#464646] border-solid border-[1.5px] rounded-[60px] outline-none bg-transparent`}
             placeholder="enter your email address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
