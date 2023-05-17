@@ -11,7 +11,7 @@ const App = () => {
     <div className="mx-auto container">
       <div className="hero-pattern"></div>
       <div className="mx-auto">
-        <h1 className="text-[#FEFEFE] pt-[30px] text-[22px] leading-[25.78px] md:pt-[33px] md:text-[32px] md:leading-[37.5px] lowercase font-medium text-center font-Eina01Bold">
+        <h1 className="text-[#FEFEFE] pt-[30px] text-[22px] leading-[25.78px] md:pt-[43px] md:text-[32px] md:leading-[37.5px] lowercase font-medium text-center font-Eina01Bold">
           ShowMeeLove.
         </h1>
         {/* <Memoji /> */}

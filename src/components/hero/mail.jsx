@@ -61,7 +61,7 @@ const Mail = ({ setModalOpen }) => {
           <input
             type="email"
             name="join waitlist"
-            className={`h-[58px] w-[360px] py-[23px] pl-[38px] md:h-[78px] md:w-[610px] md:py-[33px] md:pl-[44px] text-[#dedede] font-medium md:text-[18px] md:leading[33px] font-figtree border-[#464646] border-solid border-[1.5px] rounded-[60px] outline-none bg-transparent`}
+            className={`h-[58px] w-[360px] py-[23px] pl-[38px] md:h-[78px] md:w-[610px] md:py-[33px] md:pl-[44px] text-[#dedede] font-medium md:text-[18px] md:leading[33px] font-figtree border-[#464646] border-solid border-[1.5px] rounded-[60px] outline-none bg-[#010E21]`}
             placeholder="enter your email address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
