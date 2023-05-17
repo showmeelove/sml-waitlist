@@ -14,6 +14,7 @@ body {
   /* background-image: url(../images/herobg-min.png); */
   background: linear-gradient(0deg, #010e21, #010e21),
     linear-gradient(0deg, #61646b, #61646b);
+  /* filter: blur(10px); */
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
@@ -25,16 +26,20 @@ body {
   left: 0;
 }
 
-.hero-overlay {
-  /* background-color: rgba(0, 0, 0, 0.7); */
+.hero-pattern {
+  background-image: url(../images/bg-pattern-100.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
   width: 100%;
   height: inherit;
   position: absolute;
+  opacity: 0.05;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: -1000;
 }
 
 @font-face {
@@ -63,3 +68,18 @@ body {
   animation-duration: 5s;
 }
 
+@keyframes myAnimation {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 200px;
+  }
+}
+
+.animate-div {
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
