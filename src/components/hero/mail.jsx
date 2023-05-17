@@ -71,7 +71,7 @@ const Mail = ({ setModalOpen }) => {
           <button
             type="submit"
             // onClick={(e) => handleSubmit(e)}
-            className={`w-[357px] h-[58px]  md:h-[62px] md:w-[193.48px] md:text-[16.17px] md:leading-[29.65px] font-medium  text-white text-center bg-[#001534] md:hover:bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[35.942px]`}
+            className={`w-[357px] h-[58px]  md:h-[62px] md:w-[193.48px] md:text-[16.17px] md:leading-[29.65px] font-medium  text-white text-center bg-[#012C6B] md:hover:bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[35.942px]`}
           >
             {isLoading ? "hold on cheif..!" : "get early access"}
             {/* get early access */}
