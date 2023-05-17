@@ -8,7 +8,7 @@ import Memojis from "./memojis";
 const App = () => {
   const [modalOpen, setModalOpen] = useState(false);
   return (
-    <div className="mx-auto container">
+    <div className="mx-auto">
       <div className="hero-pattern"></div>
       <div className="mx-auto">
         <h1 className="text-[#FEFEFE] pt-[30px] text-[22px] leading-[25.78px] md:pt-[43px] md:text-[32px] md:leading-[37.5px] lowercase font-medium text-center font-Eina01Bold">
