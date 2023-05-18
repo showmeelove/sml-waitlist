@@ -37,7 +37,7 @@ const App = () => {
           <div className="mx-auto max-w-[345px]">
             <p className="md:hidden font-figtree mx-[10px] mt-[29px] text-[16px] leading-[28px] font-medium text-showgray max-w-[364px] text-center ">
               got a devoted fanbase? <br /> join our waitlist to get early
-              access to tools that will Unlock the power of direct support from
+              access to tools that will unlock the power of direct support from
               your fans and deepen your connection with your audience.
             </p>
           </div>

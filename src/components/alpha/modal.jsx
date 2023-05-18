@@ -26,7 +26,7 @@ const Modal = ({ setModalOpen }) => {
           yo! you have been added to our waitlist!
         </h2>
         <p className="text-[#EEEEEE] text-[15px] leading-[25px] max-w-[317px] mt-[30px] md:mt-[42px] md:max-w-[501px] font-figtree font-medium md:text-[20px] md:leading-[33px] text-center ">
-          We will send you an email as soon as we ready launch. do well to
+          we will send you an email as soon as we ready launch. do well to
           invite other creators to join our waitlist so they can get early
           access when we launch.
         </p>
