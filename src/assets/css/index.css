@@ -52,9 +52,6 @@ body {
   src: url("./fonts/figtree/Figtree-Regular.ttf") format("truetype");
 }
 
-.buttonbg {
-  background-color: linear-gradient(106.44deg, #1864ff 17.79%, #42aaff 85.51%);
-}
 @keyframes move {
   0% {
     transform: translateX(0);
@@ -67,20 +64,4 @@ body {
 .animate-alternate {
   animation: move infinite alternate;
   animation-duration: 5s;
-}
-
-@keyframes myAnimation {
-  from {
-    left: 0px;
-  }
-  to {
-    left: 200px;
-  }
-}
-
-.animate-div {
-  animation-name: myAnimation;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
