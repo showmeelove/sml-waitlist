@@ -15,7 +15,7 @@ const memoji = () => {
     return (
       <button
         type={type}
-        className="w-[220px] py-[0.125rem] px-[1px] bg-transparent border-[1px] border-[#A3A3A3] text-white text-center rounded-[50px] flex items-center  gap-x-5"
+        className="w-[180px] py-[0.12rem] px-[1px] bg-transparent border-[1px] border-[#A3A3A3] text-[16px] text-[#fefefe] text-center rounded-[50px] flex items-center md:gap-x-[30px] gap-x-[20px]"
       >
         {icon}
         {children}
@@ -26,7 +26,7 @@ const memoji = () => {
 
   return (
     <>
-      <div className="mt-[30px] mx-3 px-5 flex gap-x-[2rem] z-40 md:mt-[37px] hero-animation overflow-hidden">
+      <div className="mt-[35px] mx-3 px-4 flex gap-x-[2rem] z-40 md:mt-[37px] hero-animation overflow-hidden">
         <div className="animate-alternate">
           <ButtonWithImg text="developers">
             <div className="w-[50px]">
@@ -77,7 +77,7 @@ const memoji = () => {
           </ButtonWithImg>
         </div>
       </div>
-{/* 
+      {/* 
       <div className="animate-alternate">
         <img src={slidelg} alt="scrolling animation" />
       </div> */}

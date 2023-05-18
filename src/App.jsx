@@ -11,12 +11,12 @@ const App = () => {
     <div className="mx-auto">
       <div className="hero-pattern"></div>
       <div className="mx-auto">
-        <h1 className="text-[#FEFEFE] pt-[30px] text-[22px] leading-[25.78px] md:pt-[43px] md:text-[32px] md:leading-[37.5px] lowercase font-medium text-center font-Eina01Bold">
+        <h1 className="text-[#FEFEFE] pt-[33px] text-[22px] leading-[25.78px] md:pt-[43px] md:text-[32px] md:leading-[37.5px] lowercase font-medium text-center font-Eina01Bold">
           showmeelove.
         </h1>
         {/* <Memoji /> */}
         <Memojis />
-        <div className="mx-auto max-w-[356px] mt-[40px] md:mt-[30px] md:max-w-[901px] ">
+        <div className="mx-auto max-w-[356px] mt-[33px] md:mt-[30px] md:max-w-[901px] ">
           <h1 className="text-[#fefefe] text-[43px] leading-[49px] md:text-[64px] md:leading-[70px] font-Eina01Bold lowercase text-center">
             let your fans{" "}
             <span className="bg-clip-text text-transparent text-[43px] leading-[49px] md:text-[64px] md:leading-[70px] font-Eina01Bold lowercase bg-gradient-to-r from-[#1864FF] to-[#42AAFF]">
