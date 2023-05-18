@@ -45,7 +45,7 @@ const App = () => {
       </div>
       {/* Join waitlist form */}
       <Mail setModalOpen={setModalOpen} />
-      <Modal />
+      {/* <Modal /> */}
       {modalOpen ? <Modal setModalOpen={() => setModalOpen(false)} /> : null}
     </div>
   );
