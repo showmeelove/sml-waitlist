@@ -63,5 +63,5 @@ body {
 
 .animate-alternate {
   animation: move infinite alternate;
-  animation-duration: 5s;
+  animation-duration: 7s;
 }

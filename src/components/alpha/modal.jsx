@@ -32,7 +32,7 @@ const Modal = ({ setModalOpen }) => {
         </p>
         {/* <Button text={"got it! thank you 🚀"} /> */}
         <button
-          className="w-[340px] mt-[40px] py-[20px] md:w-[90%] md:py-[1.2rem] md:px-[0.5rem] font-figtree text-[17px] leading-[38px] bg-white text-[#001534] md:mt-[83px] md:text-[20px] md:leading-[33px] text-center rounded-[50px] mx-auto"
+          className="w-[340px] mt-[40px] py-[10px] md:w-[90%] md:py-[1.2rem] md:px-[0.5rem] font-figtree text-[17px] leading-[38px] bg-white text-[#001534] md:mt-[83px] md:text-[20px] md:leading-[33px] text-center rounded-[50px] mx-auto"
           onClick={setModalOpen}
         >
           got it! thank you 🚀
