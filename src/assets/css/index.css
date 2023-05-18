@@ -60,9 +60,10 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-130%);
+    transform: translateX(-700%);
     }
 }
+
 .animate-alternate {
   animation: move infinite alternate;
   animation-duration: 5s;
