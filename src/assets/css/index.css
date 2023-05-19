@@ -26,6 +26,17 @@ body {
   left: 0;
 }
 
+.gradient{
+position: absolute;
+width: 861px;
+height: 861px;
+left: -287px;
+top: -294px;
+background: rgba(24, 100, 255, 0.2);
+opacity: 0.5;
+filter: blur(200px);
+}
+
 .hero-pattern {
   background-image: url(../images/bg-pattern-100.png);
   background-position: center;
