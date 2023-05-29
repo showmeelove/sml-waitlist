@@ -30,7 +30,7 @@ const Mail = ({ setModalOpen }) => {
 				} else {
 					if (response.status === 400) {
 						// setError();
-						notify("email already added to waitlist");
+						notify("email already added to waitlist chief");
 						throw new Error(
 							"Invalid email address or email already added to waitlist"
 						);
