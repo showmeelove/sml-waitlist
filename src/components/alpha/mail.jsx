@@ -49,6 +49,10 @@ const Mail = ({ setModalOpen }) => {
 						notify("Forbidden");
 						throw new Error("Forbidden");
 					}
+					if (response.status === 404) {
+						notify("Forbidden");
+						throw new Error("Not Found");
+					}
 				}
 			})
 			.catch((error) => {

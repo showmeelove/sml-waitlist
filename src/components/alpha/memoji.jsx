@@ -17,7 +17,7 @@ const memoji = () => {
         scrollamount="17"
         direction="left"
       >
-        <div className="buttonbg container mt-[35px] flex items-center space-x-[25px]">
+        <div className="buttonbg mt-[35px] flex items-center space-x-[25px]">
           <div className="flex items-center space-x-[10px] outline-[#EEEEEE] outline outline-[1px] max-w-[200px] cursor-pointer rounded-[100px]">
             <img src={icon1} alt="developer memoji" className="p-[6px]" />
             <p className="text-white font-figtree font-medium text-[18px] leading-[21.6px] pr-[20px]">
