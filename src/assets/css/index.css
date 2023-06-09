@@ -9,6 +9,28 @@
   /* outline: 2px solid red; */
 }
 
+
+body::-webkit-scrollbar {
+  @apply w-2 bg-transparent;
+}
+
+body::-webkit-scrollbar-corner {
+  @apply bg-transparent;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-blue-500;
+}
+
+body::-webkit-scrollbar-track-piece {
+  @apply bg-transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply transition-all duration-500 rounded-full bg-red-400 hover:bg-red-200;
+}
+
+
 body {
   /* background-image: url(../images/herobg-min.png); */
   background: linear-gradient(0deg, #010e21, #010e21),
