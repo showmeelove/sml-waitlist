@@ -13,7 +13,7 @@ const Mail = ({ setModalOpen }) => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setIsLoading(true);
-		fetch("https://showmeelove-api.vercel.app/v1/waitlist", {
+		fetch("https://showmeelove.onrender.com/api/v1/waitlist", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -75,6 +75,7 @@ const Mail = ({ setModalOpen }) => {
 						className={`h-[58px] mx-auto px-4 w-[350px] py-[23px] pl-[38px] md:h-[78px] md:w-[610px] md:py-[33px] md:pl-[44px] text-[#dedede] font-medium md:text-[18px] md:leading[33px] font-figtree border-[#464646] border-solid border-[1.5px] rounded-[60px] outline-none bg-[#010E21]`}
 						placeholder='enter your email address'
 						required
+						autoComplete="off"
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
 					/>
