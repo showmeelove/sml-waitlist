@@ -75,7 +75,7 @@ const Mail = ({ setModalOpen }) => {
       .catch((error) => {
         console.error("Error:", error);
         setIsLoading(false);
-        // notify("failed to fetch, network error!");
+        notify("failed to fetch, network error!");
         // alert(error);
       });
   };
