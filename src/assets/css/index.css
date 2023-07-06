@@ -7,14 +7,36 @@
   padding: 0;
   box-sizing: border-box;
   /* outline: 2px solid red; */
-  /* overflow: hidden; */
 }
+
+
+body::-webkit-scrollbar {
+  @apply w-2 bg-transparent;
+}
+
+body::-webkit-scrollbar-corner {
+  @apply bg-transparent;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-blue-500;
+}
+
+body::-webkit-scrollbar-track-piece {
+  @apply bg-transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply transition-all duration-500 rounded-full bg-red-400 hover:bg-red-200;
+}
+
 
 body {
   /* background-image: url(../images/herobg-min.png); */
   background: linear-gradient(0deg, #010e21, #010e21),
     linear-gradient(0deg, #61646b, #61646b);
   /* filter: blur(10px); */
+  overflow-x: hidden;
   background-position: center;
   background-repeat: repeat;
   background-size: cover;

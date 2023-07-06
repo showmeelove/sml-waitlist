@@ -1,8 +1,6 @@
 import { useState } from "react";
-
 import Mail from "./components/alpha/mail";
 import Modal from "./components/alpha/modal";
-// import Memoji from "./components/alpha/memoji";
 import Memojis from "./components/alpha/memojis";
 
 const App = () => {
@@ -53,3 +51,4 @@ const App = () => {
 };
 
 export default App;
+ 
