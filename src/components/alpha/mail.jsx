@@ -24,7 +24,7 @@ const Mail = ({ setModalOpen }) => {
     e.preventDefault();
 
     if (email === "") {
-      notify("email input is empty!");
+      notify("email input can not be blank!");
       return;
     }
 
