@@ -4,11 +4,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 // eslint-disable-next-line react/prop-types
 const Mail = ({ setModalOpen }) => {
-  const [error, setError] = useState(null);
-
-  function isValidMail(email) {
-    return /\S+@\S+\.\S+/.test(email);
-  }
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -28,12 +23,9 @@ const Mail = ({ setModalOpen }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setError(null);
-
-    if (isValidMail(email)) {
-      console.log("email is valid tho");
-    } else {
-      setError("Email is invalid, chief!😏");
+    if (email === "") {
+      notify("email input is empty!");
+      return;
     }
 
     setIsLoading(true);
@@ -54,50 +46,46 @@ const Mail = ({ setModalOpen }) => {
         } else {
           if (response.status === 400) {
             // setError();
-            notify("email already added to waitlist chief");
+            notify("email already added to waitlist!");
             throw new Error(
               "Invalid email address or email already added to waitlist"
             );
           }
 
           if (response.status === 500) {
-            notify("Server Error. Try again later.");
-            throw new Error("Server error. Try again later");
+            notify("server error. try again later.");
+            throw new Error("server error. try again later");
           }
 
           if (response.status === 401) {
-            notify("Unathorized");
-            throw new Error("Unathorized");
+            notify("unathorized");
+            throw new Error("unathorized");
           }
           if (response.status === 403) {
-            notify("Forbidden");
-            throw new Error("Forbidden");
+            notify("forbidden");
+            throw new Error("forbidden");
           }
           if (response.status === 404) {
-            notify("Forbidden");
-            throw new Error("Not Found");
+            notify("forbidden");
+            throw new Error("not found");
           }
         }
+        setEmail("");
       })
       .catch((error) => {
         console.error("Error:", error);
         setIsLoading(false);
-
-        alert(error);
+        // notify("failed to fetch, network error!");
+        // alert(error);
       });
   };
 
   return (
-    <div className="mt-[50px] mb-[0px] md:mt-[70px]">
+    <div className="mt-[50px] mb-[0px] md:mt-[40px]">
       <form
         onSubmit={handleSubmit}
-        className="md:max-w-[610px] flex flex-col space-y-6 justify-between items-center mx-auto md:relative "
+        className="md:max-w-[610px] flex flex-col space-y-6 justify-between items-center mx-auto md:relative"
       >
-        {error && (
-          <h4 className="text-center -mb-5 mx-auto text-red-500  text-base font-medium">
-            {error}
-          </h4>
-        )}
         <div className="mx-[30px]">
           <input
             type="email"
