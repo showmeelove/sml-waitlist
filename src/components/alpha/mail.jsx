@@ -4,95 +4,127 @@ import "react-toastify/dist/ReactToastify.css";
 
 // eslint-disable-next-line react/prop-types
 const Mail = ({ setModalOpen }) => {
-	const [email, setEmail] = useState("");
-	const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-	// const [error, setError] = useState("");
-	const notify = (error) => toast.error(error);
+  function isValidMail(email) {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+  const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		setIsLoading(true);
-		fetch("https://showmeelove.onrender.com/api/v1/waitlist", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify({
-				email: email,
-			}),
-		})
-			.then((response) => {
-				if (response.ok) {
-					setModalOpen(true);
-					setIsLoading(false);
-					console.log("Request sent successfully!");
-				} else {
-					if (response.status === 400) {
-						// setError();
-						notify("email already added to waitlist chief");
-						throw new Error(
-							"Invalid email address or email already added to waitlist"
-						);
-					}
+  // const [error, setError] = useState("");
+  const notify = (error) => toast.error(error);
 
-					if (response.status === 500) {
-						notify("Server Error. Try again later.");
-						throw new Error("Server error. Try again later");
-					}
+  const handleChange = (e) => {
+    // if (!isValidMail(e.target.value)) {
+    //   setError("Email is invalid, chief!😏");
+    // } else {
+    //   setError(null);
+    // }
 
-					if (response.status === 401) {
-						notify("Unathorized");
-						throw new Error("Unathorized");
-					}
-					if (response.status === 403) {
-						notify("Forbidden");
-						throw new Error("Forbidden");
-					}
-					if (response.status === 404) {
-						notify("Forbidden");
-						throw new Error("Not Found");
-					}
-				}
-			})
-			.catch((error) => {
-				console.error("Error:", error);
-				setIsLoading(false);
+    setEmail(e.target.value);
+  };
 
-				// alert(error);
-			});
-	};
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-	return (
-		<div className='mt-[50px] mb-[0px] md:mt-[70px]'>
-			<form
-				onSubmit={handleSubmit}
-				className='md:max-w-[610px] flex flex-col space-y-6 justify-between items-center mx-auto md:relative '>
-				<div className='mx-[30px]'>
-					<input
-						type='email'
-						name='join waitlist'
-						className={`h-[58px] mx-auto px-4 w-[350px] py-[23px] pl-[38px] md:h-[78px] md:w-[610px] md:py-[33px] md:pl-[44px] text-[#dedede] font-medium md:text-[18px] md:leading[33px] font-figtree border-[#464646] border-solid border-[1.5px] rounded-[60px] outline-none bg-[#010E21]`}
-						placeholder='enter your email address'
-						required
-						autoComplete="off"
-						value={email}
-						onChange={(e) => setEmail(e.target.value)}
-					/>
-				</div>
-				<div className='md:absolute relative md:top-[-12] md:bottom-2 md:right-2'>
-					<button
-						type='submit'
-						// onClick={(e) => handleSubmit(e)}
-						className={`w-[351px] h-[58px] mx-auto px-4  md:h-[62px] md:w-[193.48px] md:text-[16.17px] md:leading-[29.65px] font-medium font-figtree text-[#fefefe] text-center bg-[#012C6B] md:hover:bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[35.942px]`}>
-						{isLoading ? "hold on chief..!" : "get early access"}
-						{/* get early access */}
-					</button>
-				</div>
-			</form>
-			<ToastContainer />
-		</div>
-	);
+    setError(null);
+
+    if (isValidMail(email)) {
+      console.log("email is valid tho");
+    } else {
+      setError("Email is invalid, chief!😏");
+    }
+
+    setIsLoading(true);
+    fetch("https://showmeelove.onrender.com/api/v1/waitlist", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: email,
+      }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          setModalOpen(true);
+          setIsLoading(false);
+          console.log("Request sent successfully!");
+        } else {
+          if (response.status === 400) {
+            // setError();
+            notify("email already added to waitlist chief");
+            throw new Error(
+              "Invalid email address or email already added to waitlist"
+            );
+          }
+
+          if (response.status === 500) {
+            notify("Server Error. Try again later.");
+            throw new Error("Server error. Try again later");
+          }
+
+          if (response.status === 401) {
+            notify("Unathorized");
+            throw new Error("Unathorized");
+          }
+          if (response.status === 403) {
+            notify("Forbidden");
+            throw new Error("Forbidden");
+          }
+          if (response.status === 404) {
+            notify("Forbidden");
+            throw new Error("Not Found");
+          }
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        setIsLoading(false);
+
+        alert(error);
+      });
+  };
+
+  return (
+    <div className="mt-[50px] mb-[0px] md:mt-[70px]">
+      <form
+        onSubmit={handleSubmit}
+        className="md:max-w-[610px] flex flex-col space-y-6 justify-between items-center mx-auto md:relative "
+      >
+        {error && (
+          <h4 className="text-center -mb-5 mx-auto text-red-500  text-base font-medium">
+            {error}
+          </h4>
+        )}
+        <div className="mx-[30px]">
+          <input
+            type="email"
+            name="join waitlist"
+            className={`h-[58px] mx-auto px-4 w-[350px] py-[23px] pl-[38px] md:h-[78px] md:w-[610px] md:py-[33px] md:pl-[44px] text-[#dedede] font-medium md:text-[18px] md:leading[33px] font-figtree border-[#464646] border-solid border-[1.5px] rounded-[60px] outline-none bg-[#010E21]`}
+            placeholder="enter your email address"
+            // required
+            autoComplete="off"
+            value={email}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="md:absolute relative md:top-[-12] md:bottom-2 md:right-2">
+          <button
+            type="submit"
+            // onClick={(e) => handleSubmit(e)}
+            className={`w-[351px] h-[58px] mx-auto px-4  md:h-[62px] md:w-[193.48px] md:text-[16.17px] md:leading-[29.65px] font-medium font-figtree text-[#fefefe] text-center bg-[#012C6B] md:hover:bg-gradient-to-r from-[#1864FF] to-[#42AAFF] rounded-[35.942px]`}
+          >
+            {isLoading ? "hold on chief..!" : "get early access"}
+            {/* get early access */}
+          </button>
+        </div>
+      </form>
+
+      <ToastContainer />
+    </div>
+  );
 };
 
 export default Mail;
